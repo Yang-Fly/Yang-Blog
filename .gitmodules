@@ -1,0 +1,3 @@
+[submodule "Anatolo"]
+	path = themes/Anatolo
+	url = https://github.com/Lhcfl/hexo-theme-anatolo

@@ -1,0 +1,19 @@
+.footer
+  .p 
+    span  #{theme.footbar.copyright} 
+    i.fa.fa-star
+    span  #{theme.author}
+
+  .by_farbox
+    span Powered by 
+    a(href="https://hexo.io/zh-cn/", target="_blank") Hexo 
+    span  & 
+    span Anatolo 
+    
+  .moe
+    if theme.footbar.beian
+      img(src = url_for('images/moe.png'), style="height:15px;margin-left: 10px;position: relative;top: 1px;")
+      a(href="https://icp.gov.moe/", target="_blank", style="margin-left: 2px;") #{theme.footbar.beian}
+    if theme.footbar.gongan
+      img(src = url_for('images/gongan.png'), style="height:10px;margin-left: 10px;position: relative;top: 1px;")
+      span(style="margin-left: 2px;") #{theme.footbar.gongan}
