@@ -3,7 +3,7 @@ nodepm=yarn
 SHELL=/bin/bash
 #nodepm=yarn
 
-.PHONY: world check genver init git modify submodules-scripts submodules packages hexo cimod ci clean substash
+.PHONY: world check genver init git modify submodules-build submodules-scripts submodules packages hexo cimod ci clean substash
 
 world: hexo
 
@@ -43,7 +43,9 @@ modify: git substash
 	@echo -e "\033[32m[MODIFY ]\033[0m themes/Anatolo/layout/partial/footer.pug" && cp themes/Anatolo_patches/layout/partial/footer.pug themes/Anatolo/layout/partial/footer.pug
 	@echo -e "\033[32m[MODIFY ]\033[0m themes/Anatolo/source/images/moe.png" && cp themes/Anatolo_patches/source/images/moe.png themes/Anatolo/source/images/moe.png
 
-submodules-scripts: genver
+submodules-build: packages modify
+
+submodules-scripts: submodules-build genver
 	@echo -e "\033[32m[GENVER ]\033[0m Writing build info and query string into source...\c"
 	# @cat themes/Anatolo_patches/genver >> themes/Anatolo/layout/partial/script.ejs
 	@echo -e "ok"
@@ -70,6 +72,7 @@ clean:
 	@echo -e "\033[32m[CLEAN  ]\033[0m node_modules/" && rm -rf node_modules/
 	@echo -e "\033[32m[CLEAN  ]\033[0m themes/Anatolo/" && rm -rf themes/Anatolo/
 	@echo -e "\033[32m[CLEAN  ]\033[0m public/" && rm -rf public/
+	@echo -e "\033[32m[CLEAN  ]\033[0m themes/Anatolo_patches/genver" && rm -rf themes/Anatolo_patches/genver
 
 substash: 
 	@echo -e "\033[32m[S-STASH]\033[0m \c" && cd themes/Anatolo && git stash
