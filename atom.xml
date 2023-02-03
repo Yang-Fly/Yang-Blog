@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-02-03T15:54:13.729Z</updated>
+  <updated>2023-02-03T16:05:05.000Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2023/02/03/hello-world/"/>
     <id>http://example.com/2023/02/03/hello-world/</id>
     <published>2023-02-03T15:46:06.000Z</published>
-    <updated>2023-02-03T15:54:13.729Z</updated>
+    <updated>2023-02-03T16:05:05.000Z</updated>
     
     <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>如你所见，当你看到这篇 post 的时候，我应该已经成功部署了 Hexo 并使用了 Anatolo 主题</p><p>接下来应该会尝试继续优化，抽空填充一下 blog 的内容，就这样</p><p>（？</p>]]></content>
     
@@ -34,6 +34,12 @@
     
     </summary>
     
+      <category term="Hello World" scheme="http://example.com/categories/Hello-World/"/>
+    
+    
+      <category term="Hello World" scheme="http://example.com/tags/Hello-World/"/>
+    
+      <category term="Test Article" scheme="http://example.com/tags/Test-Article/"/>
     
   </entry>
   
