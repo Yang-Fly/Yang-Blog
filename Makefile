@@ -29,7 +29,7 @@ genver: git
 	@echo -e "ok"
 
 init: check
-	@echo -e "\033[32m[GIT    ]\033[0m Updating submodules... " && git submodule update --init --recursive && git clone https://github.com/Lhcfl/hexo-theme-anatolo themes/Anatolo
+	@echo -e "\033[32m[GIT    ]\033[0m Updating submodules... " && git submodule update --init --recursive
 
 git: init
 	@if [ $(shell git rev-parse --abbrev-ref HEAD) = "master" ]; then\
