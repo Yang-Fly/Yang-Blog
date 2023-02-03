@@ -45,7 +45,7 @@ modify: git substash
 
 submodules-scripts: genver
 	@echo -e "\033[32m[GENVER ]\033[0m Writing build info and query string into source...\c"
-	@cat themes/Anatolo_patches/genver >> themes/Anatolo/layout/partial/script.ejs
+	# @cat themes/Anatolo_patches/genver >> themes/Anatolo/layout/partial/script.ejs
 	@echo -e "ok"
 	@cat themes/Anatolo_patches/genver
 
