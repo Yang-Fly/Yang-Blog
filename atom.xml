@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Yang&#39;s Blog</title>
   
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://bakayang.moe/"/>
   <updated>2023-02-03T16:05:05.000Z</updated>
-  <id>http://example.com/</id>
+  <id>https://bakayang.moe/</id>
   
   <author>
     <name>John Doe</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hexo 部署 大成功1111111111</title>
-    <link href="http://example.com/2023/02/03/hello-world/"/>
-    <id>http://example.com/2023/02/03/hello-world/</id>
+    <link href="https://bakayang.moe/2023/02/03/hello-world/"/>
+    <id>https://bakayang.moe/2023/02/03/hello-world/</id>
     <published>2023-02-03T15:46:06.000Z</published>
     <updated>2023-02-03T16:05:05.000Z</updated>
     
@@ -34,12 +34,12 @@
     
     </summary>
     
-      <category term="Hello World" scheme="http://example.com/categories/Hello-World/"/>
+      <category term="Hello World" scheme="https://bakayang.moe/categories/Hello-World/"/>
     
     
-      <category term="Hello World" scheme="http://example.com/tags/Hello-World/"/>
+      <category term="Hello World" scheme="https://bakayang.moe/tags/Hello-World/"/>
     
-      <category term="Test Article" scheme="http://example.com/tags/Test-Article/"/>
+      <category term="Test Article" scheme="https://bakayang.moe/tags/Test-Article/"/>
     
   </entry>
   
