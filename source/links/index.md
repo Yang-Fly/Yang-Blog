@@ -89,7 +89,7 @@ updated: 2023-02-04 00:05:50
                </div>
             </div></br>
             <div class="card">
-               <img class="ava" src="https://cos.mbrjun.cn/PICS/LG4v3avatar144px.jpg" />
+               <img class="ava" src="https://assets.bakayang.moe/imgs/2023/02/04/ps.webp" />
                <div class="card-header">
                   <div>
                      <a href="https://www.mbrjun.cn/">MBRjun-Blog</a>
