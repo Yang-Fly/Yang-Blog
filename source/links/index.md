@@ -103,7 +103,7 @@ updated: 2023-02-04 00:05:50
                   <div>
                      <a href="https://blog.siscon.top/">siscon</a>
                   </div>
-                  <div class="info"></div>
+                  <div class="info">一枚妹控</div>
                </div>
             </div></br>
             <div class="card">
