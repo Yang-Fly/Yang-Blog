@@ -33,7 +33,7 @@ init: check
 
 git: init
 	@if [ $(shell git rev-parse --abbrev-ref HEAD) = "master" ]; then\
-		echo -e "\033[32m[GIT    ]\033[0m \c" && git pull --ff-only;\
+		echo -e "\033[32m[GIT    ]\033[0m \c" && git pull;\
 	else\
 		echo -e "\033[32m[GIT    ]\033[0m Not using branch master. Skip.";\
 	fi
@@ -42,12 +42,14 @@ modify: git substash
 	@echo -e "\033[32m[MODIFY ]\033[0m themes/Anatolo/_config.yml" && cp themes/Anatolo_patches/_config.yml themes/Anatolo/_config.yml
 	@echo -e "\033[32m[MODIFY ]\033[0m themes/Anatolo/layout/partial/footer.pug" && cp themes/Anatolo_patches/layout/partial/footer.pug themes/Anatolo/layout/partial/footer.pug
 	@echo -e "\033[32m[MODIFY ]\033[0m themes/Anatolo/source/images/moe.png" && cp themes/Anatolo_patches/source/images/moe.png themes/Anatolo/source/images/moe.png
+	@echo -e "\033[32m[MODIFY ]\033[0m themes/Anatolo/source/images/favicon.jpg" && cp themes/Anatolo_patches/source/images/favicon.jpg themes/Anatolo/source/images/favicon.jpg
+	@echo -e "\033[32m[MODIFY ]\033[0m themes/Anatolo/source/images/logo.jpg" && cp themes/Anatolo_patches/source/images/logo.jpg themes/Anatolo/source/images/logo.jpg
 
 submodules-build: packages modify
 
 submodules-scripts: submodules-build genver
 	@echo -e "\033[32m[GENVER ]\033[0m Writing build info and query string into source...\c"
-	# @cat themes/Anatolo_patches/genver >> themes/Anatolo/layout/partial/script.ejs
+	@cat themes/Anatolo_patches/genver >> themes/Anatolo/layout/partial/layout.pug
 	@echo -e "ok"
 	@cat themes/Anatolo_patches/genver
 
