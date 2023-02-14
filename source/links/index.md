@@ -133,6 +133,15 @@ updated: 2023-02-04 00:05:50
                   <div class="info">啊呜布洛咕</div>
                </div>
             </div></br>
+            <div class="card">
+               <img class="ava" src="https://young-lord.github.io/assets/images/logo/logo_pixiv65149795.webp" />
+               <div class="card-header">
+                  <div>
+                     <a href="https://young-lord.github.io">LY</a>
+                  </div>
+                  <div class="info">\ Niko /</div>
+               </div>
+            </div></br>
             <!--
                在上方添加你的网站
                像其他网站一样，添加一段 HTML 代码
