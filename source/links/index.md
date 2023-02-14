@@ -162,4 +162,4 @@ avatar: ``https://bakayang.moe/images/logo.jpg``
 url: ``https://bakayang.moe/``
 
 ### 申请友链
-请[在 GitHub 修改此页面](https://github.com/Yang-Fly/Yang-Blog/edit/main/source/links/index.md)，然后创建 Pull Request
+请[在 GitHub 修改此页面](https://github.com/Yang-Fly/Yang-Blog/edit/master/source/links/index.md)，然后创建 Pull Request
